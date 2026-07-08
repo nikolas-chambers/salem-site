@@ -45,20 +45,41 @@
         The app makes the following network requests:
     </p>
     <ul>
-        <li>National Weather Service API &mdash; for weather forecasts and current conditions</li>
+        <li>National Weather Service API &mdash; for weather forecasts and current conditions (uses a fixed Salem, MA location, not your device location)</li>
         <li>OpenStreetMap tile servers &mdash; for map rendering</li>
-        <li>Google Gemini API &mdash; for the AI chat feature (only when you send a message)</li>
+        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings (only when you send a message; your typed text is sent to Google to generate a reply, and is not stored on our servers)</li>
     </ul>
     <p>
         No identifying information is included in these requests beyond what is
-        necessary for the API to function (e.g., GPS coordinates for weather lookups).
+        necessary for the API to function.
     </p>
+
+    <h2>Feedback &amp; Suggestions</h2>
+    <p>
+        The in-app Suggestions feature opens your device's email app with your message
+        pre-filled, addressed to the developer. It is only sent if you choose to send it,
+        and goes directly to the developer's inbox &mdash; it is not collected or stored by us otherwise.
+    </p>
+
+    <h2>What We Don't Do</h2>
+    <ul>
+        <li>No account creation or sign-in.</li>
+        <li>No advertising SDKs.</li>
+        <li>No analytics or crash-reporting SDKs.</li>
+        <li>We never sell data, because we don't collect any to sell.</li>
+    </ul>
 
     <h2>Third-Party Services</h2>
     <p>
         Links within the app open external websites in your device browser.
         Those sites operate under their own privacy policies. We encourage you
         to review the privacy policy of any site you visit.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+        Salem is not directed at children under 13, and we do not knowingly collect
+        information from children.
     </p>
 
     <h2>Changes to This Policy</h2>
@@ -69,8 +90,10 @@
 
     <h2>Contact</h2>
     <p>
-        For questions about this privacy policy, please open an issue on the
-        <a href="https://github.com/nx-mod/salem" target="_blank" rel="noopener">GitHub repository</a>.
+        For questions about this privacy policy, email
+        <a href="mailto:nikolasjonchambers@gmail.com">nikolasjonchambers@gmail.com</a>
+        or open an issue on the
+        <a href="https://github.com/nikolas-chambers/salem" target="_blank" rel="noopener">GitHub repository</a>.
     </p>
 </div>
 
@@ -81,7 +104,7 @@
             <a href="copyright.html">Copyright</a>
             <a href="privacy.html">Privacy Policy</a>
         </div>
-        <p>&copy; 2026 Salem App. All rights reserved.</p>
+        <p>&copy; 2026 Nikolas Chambers. All rights reserved.</p>
     </div>
 </footer>
 
