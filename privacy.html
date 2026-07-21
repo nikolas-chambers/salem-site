@@ -23,13 +23,16 @@
 
 <div class="legal-content">
     <h1>Privacy Policy</h1>
-    <p><em>Last updated: July 2026</em></p>
+    <p><em>Last updated: July 21, 2026</em></p>
 
     <h2>Information We Collect</h2>
     <p>
-        The Salem app does not collect, store, or transmit any personal information.
-        All app data is loaded from local resources and public APIs. No user accounts,
-        analytics, or tracking are implemented.
+        The Salem app has no user accounts, no analytics, no advertising, and no
+        tracking SDKs, and we do not operate any server that stores information about
+        you. Guide content is bundled with the app or loaded from public APIs. The
+        only time information leaves your device is when you actively use a network
+        feature &mdash; weather, maps, walking directions, or the AI chat and tarot
+        features &mdash; as described below.
     </p>
 
     <h2>Location Data</h2>
@@ -45,13 +48,19 @@
         The app makes the following network requests:
     </p>
     <ul>
-        <li>National Weather Service API &mdash; for weather forecasts and current conditions (uses a fixed Salem, MA location, not your device location)</li>
-        <li>OpenStreetMap tile servers &mdash; for map rendering</li>
-        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings (only when you send a message; your typed text is sent to Google to generate a reply, and is not stored on our servers)</li>
+        <li>National Weather Service API &mdash; for weather forecasts and current conditions (uses a fixed Salem, MA coordinate, not your device location)</li>
+        <li>OpenStreetMap tile servers &mdash; for map imagery; tiles are requested for the area shown on screen</li>
+        <li>OpenStreetMap-based routing (OSRM) &mdash; to draw walking trails between fixed points of interest; your device location is not sent</li>
+        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings (only when you send a message or request a reading; the text you enter is sent to Google to generate a response, and is not stored on any server of ours)</li>
     </ul>
     <p>
         No identifying information is included in these requests beyond what is
-        necessary for the API to function.
+        necessary for the API to function. Text you send to the AI features is
+        processed by Google under its own
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>;
+        avoid entering personal or sensitive information into the chat or tarot
+        features. AI-generated responses may be inaccurate and are for entertainment
+        and general information only.
     </p>
 
     <h2>Feedback &amp; Suggestions</h2>
