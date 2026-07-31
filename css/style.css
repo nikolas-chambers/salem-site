@@ -159,6 +159,7 @@ section:nth-child(even) { background: var(--warm-gray); }
     font-weight: 600;
     transition: all 0.2s;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .btn-primary {
