@@ -23,7 +23,7 @@
 
 <div class="legal-content">
     <h1>Privacy Policy</h1>
-    <p><em>Last updated: July 21, 2026</em></p>
+    <p><em>Last updated: August 5, 2026</em></p>
 
     <h2>Information We Collect</h2>
     <p>
@@ -51,16 +51,35 @@
         <li>National Weather Service API &mdash; for weather forecasts and current conditions (uses a fixed Salem, MA coordinate, not your device location)</li>
         <li>OpenStreetMap tile servers &mdash; for map imagery; tiles are requested for the area shown on screen</li>
         <li>OpenStreetMap-based routing (OSRM) &mdash; to draw walking trails between fixed points of interest; your device location is not sent</li>
-        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings (only when you send a message or request a reading; the text you enter is sent to Google to generate a response, and is not stored on any server of ours)</li>
+        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings, and for translating weather text into non-English languages (see below)</li>
+        <li>Google Play &mdash; if you installed from the Play Store, the app asks Play whether a newer version is available so it can offer an update</li>
     </ul>
     <p>
         No identifying information is included in these requests beyond what is
-        necessary for the API to function. Text you send to the AI features is
-        processed by Google under its own
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>;
-        avoid entering personal or sensitive information into the chat or tarot
-        features. AI-generated responses may be inaccurate and are for entertainment
-        and general information only.
+        necessary for the API to function.
+    </p>
+
+    <h2>AI Features &amp; What Is Sent</h2>
+    <p>
+        The AI tour guide and the tarot readings are powered by <strong>Google's
+        Gemini API</strong>. Text you type into those screens is sent to Google to
+        generate the reply, and Google processes it under its own
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+        Nothing is stored on any server of ours.
+    </p>
+    <p>
+        Because your typed messages leave the device when you use these features,
+        <strong>do not enter personal or sensitive information into the chat or tarot
+        screens</strong>. AI-generated responses may be inaccurate and are provided for
+        entertainment and general information only.
+    </p>
+    <p>
+        Separately, when the app is set to a language other than English, the English
+        weather text supplied by the National Weather Service is sent to the same
+        API to be translated. Those requests contain only the public forecast
+        wording &mdash; never your location, your messages, or anything identifying
+        you. Translations are cached on your device so a given phrase is sent at
+        most once.
     </p>
 
     <h2>Feedback &amp; Suggestions</h2>
@@ -100,9 +119,7 @@
     <h2>Contact</h2>
     <p>
         For questions about this privacy policy, email
-        <a href="mailto:nikolasjonchambers@gmail.com">nikolasjonchambers@gmail.com</a>
-        or open an issue on the
-        <a href="https://github.com/nikolas-chambers/salem" target="_blank" rel="noopener">GitHub repository</a>.
+        <a href="mailto:nikolasjonchambers@gmail.com">nikolasjonchambers@gmail.com</a>.
     </p>
 </div>
 
