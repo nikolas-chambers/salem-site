@@ -31,8 +31,9 @@
         tracking SDKs, and we do not operate any server that stores information about
         you. Guide content is bundled with the app or loaded from public APIs. The
         only time information leaves your device is when you actively use a network
-        feature &mdash; weather, maps, walking directions, or the AI chat and tarot
-        features &mdash; as described below.
+        feature &mdash; weather, maps, walking directions, or one of the AI
+        features (chat, tarot, and the optional readings on the rune and I Ching
+        screens) &mdash; as described below.
     </p>
 
     <h2>Location Data</h2>
@@ -51,7 +52,7 @@
         <li>National Weather Service API &mdash; for weather forecasts and current conditions (uses a fixed Salem, MA coordinate, not your device location)</li>
         <li>OpenStreetMap tile servers &mdash; for map imagery; tiles are requested for the area shown on screen</li>
         <li>OpenStreetMap-based routing (OSRM) &mdash; to draw walking trails between fixed points of interest; your device location is not sent</li>
-        <li>Google Gemini API &mdash; for the AI chat guide and tarot readings, and for translating weather text into non-English languages (see below)</li>
+        <li>Google Gemini API &mdash; for the AI chat guide, tarot readings, and the optional readings on the rune-casting and I Ching screens, and for translating weather text into non-English languages (see below)</li>
         <li>Google Play &mdash; if you installed from the Play Store, the app asks Play whether a newer version is available so it can offer an update</li>
     </ul>
     <p>
@@ -61,8 +62,9 @@
 
     <h2>AI Features &amp; What Is Sent</h2>
     <p>
-        The AI tour guide and the tarot readings are powered by <strong>Google's
-        Gemini API</strong>. Text you type into those screens is sent to Google to
+        The AI tour guide, the tarot readings, and the optional readings on the
+        rune-casting and I Ching screens are powered by <strong>Google's Gemini
+        API</strong>. Text you type into those screens is sent to Google to
         generate the reply, and Google processes it under its own
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
         Nothing is stored on any server of ours.
@@ -72,6 +74,13 @@
         <strong>do not enter personal or sensitive information into the chat or tarot
         screens</strong>. AI-generated responses may be inaccurate and are provided for
         entertainment and general information only.
+    </p>
+    <p>
+        The rune and I Ching screens are different in one respect worth stating:
+        they take no typed input at all. If you ask for a reading, what is sent is
+        only which runes or which hexagram the cast produced. Both screens work
+        fully without that button &mdash; the draw and every meaning are on the
+        device, and the AI reading is an extra rather than the feature.
     </p>
     <p>
         Separately, when the app is set to a language other than English, the English
