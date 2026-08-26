@@ -64,8 +64,8 @@
     <p>
         The astrology chart is calculated entirely on your device, from published
         public-domain astronomical data bundled with the app. Birth details you
-        enter &mdash; date, time, place &mdash; are used only for that
-        calculation. <strong>They are never transmitted anywhere.</strong>
+        enter &mdash; name, date, time, place &mdash; stay on your device. Nothing
+        is sent anywhere to draw the chart.
     </p>
     <p>
         If you save a chart, those details are stored on your device only, in the
@@ -74,10 +74,37 @@
         the app, removes them.
     </p>
 
+    <p>
+        The chart screen has one optional button that does send something. Asking
+        for an AI reading transmits the <em>calculated planetary positions</em>
+        &mdash; not the name, not the birthplace, not anything you typed. You
+        should know that those positions still describe the moment of birth
+        closely enough to pin it down. The chart, the wheel and every placement
+        are drawn without that button ever being pressed.
+    </p>
+
+    <h2>Palm Reading</h2>
+    <p>
+        The palm reading screen works from a photograph of a hand, either taken
+        with the camera or chosen from your gallery. The app asks first and
+        explains what will happen before either option opens. The photo is then
+        scaled down, sent to <strong>Google's Gemini API</strong> to produce the
+        reading, and discarded.
+    </p>
+    <p>
+        <strong>The app never writes the photo to storage and never sends it
+        anywhere else.</strong> We keep no copy of it, and we operate no server
+        for one to sit on. Google processes the image under its own
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+        Photograph a hand and nothing more &mdash; whatever else is in the frame
+        is sent along with it. The whole feature is optional, and nothing is sent
+        unless you pick a photo yourself.
+    </p>
+
     <h2>AI Features &amp; What Is Sent</h2>
     <p>
         The AI tour guide, the tarot readings, and the optional readings on the
-        rune-casting and I Ching screens are powered by <strong>Google's Gemini
+        rune-casting, I Ching, astrology chart and palm reading screens are powered by <strong>Google's Gemini
         API</strong>. Text you type into those screens is sent to Google to
         generate the reply, and Google processes it under its own
         <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
