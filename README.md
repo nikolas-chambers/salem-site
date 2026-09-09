@@ -3,10 +3,23 @@
 The website for **SALEM!**, a tour guide to Massachusetts' Witch City.
 
 Live at **https://nikolas-chambers.github.io/salem-site/** — a static site
-(`index.html`, `privacy.html`, `copyright.html`, `css/`) served straight from
-this repo by GitHub Pages.
+(`index.html`, `privacy.html`, `copyright.html`, `css/`, `gallery/`) served
+straight from `main` by GitHub Pages. There is no build step: commit, push, and
+Pages rebuilds in under a minute.
 
-The app itself lives in [salem](https://github.com/nikolas-chambers/salem).
+**This repo is public on purpose.** Google Play has to reach the privacy policy
+without a login, and Pages will not serve a private repo on a free account. It
+holds nothing secret — the app's source is private, at
+`nikolas-chambers/salem-private`.
+
+## The one invariant
+
+`privacy.html` and `PRIVACY_POLICY.md` in the app repo are the same document in
+two formats and **must never drift**. Play links to this one; the Markdown one
+is canonical. Both must name every AI provider the app can actually reach, so a
+change to `AiClient.PROVIDERS` is a change to both files in the same sitting.
+
+Both are currently dated **6 September 2026**.
 
 ---
 
